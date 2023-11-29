@@ -8,10 +8,12 @@ import { products } from '../products';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
+
   products = [...products];
 
-  share(name: string) {
-    window.alert(name + " has been shared!");
+  share() {
+    console.log("Alert me");
+    window.alert("The product has been shared!");
   }
 
   onNotify() {
